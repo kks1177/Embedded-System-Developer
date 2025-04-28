@@ -1,0 +1,121 @@
+
+**** 01/11/22 12:39:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\work_OrCAD\3_Project\0111_ultra_sonic_receiver-pspicefiles\schematic1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/work_OrCAD/1_library/kks_device.lib" 
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100u 0 100n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 0111_ULTRA_SONIC_RECEIVER
+X_U3A         N06172 N05912 VCC VEE DUAL1 RC4558
+R_R1         REF VCC  10k TC=0,0 
+C_C1         0 REF  1u  TC=0,0 
+R_R4         0 N06172  10k TC=0,0 
+X_U4B         N06216 N05954 VCC VEE DUAL2 RC4558
+R_R7         DUAL1 N05954  10k TC=0,0 
+V_V3         VCC2 0 6Vdc
+R_R8         0 N06216  10k TC=0,0 
+R_R6         N05954 DUAL2  100k TC=0,0 
+V_V4         RX 0  
++SIN 3.5 10m 40k 0 0 0
+V_V1         VCC 0 12Vdc
+R_R2         0 REF  10k TC=0,0 
+C_C2         RX N06088  1n  TC=0,0 
+R_R5         N05912 DUAL1  100k TC=0,0 
+V_V2         VEE 0 -12Vdc
+R_R3         N06088 N05912  10k TC=0,0 
+C_C3         RX N08368  1n  TC=0,0 
+R_R11         N08368 N08190  10k TC=0,0 
+R_R12         SINGLE1 N08234  10k TC=0,0 
+R_R10         N08234 SINGLE2  100k TC=0,0 
+R_R9         N08190 SINGLE1  100k TC=0,0 
+X_U5B         REF N08190 VCC 0 SINGLE1 RC4558
+X_U4C         REF N08234 VCC 0 SINGLE2 RC4558
+C_C4         SINGLE2 N09975  1n  TC=0,0 
+R_R13         N09975 0  10k TC=0,0 
+
+**** RESUMING tran.cir ****
+.END
+
+ERROR -- EVALUATION VERSION analog Node Limit (75 Nodes) Exceeded!
+
+
+
+
+ABORTING SIMULATION
+**** 01/11/22 12:39:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\work_OrCAD\3_Project\0111_ultra_sonic_receiver-pspicefiles\schematic1\tran.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          19
+  External (NCNODS)                 =          79
+  Total (NUMNOD)                    =          79
+
+Total device count (NUMEL)          =         141
+  Capacitors (C)                    =          12
+  Diodes (D)                        =          20
+  VCVS (E)                          =           4
+  CCCS (F)                          =           4
+  VCCS (G)                          =           8
+  CCVS (H)                          =           4
+  Current Sources (I)               =           4
+  BJTs (Q)                          =           8
+  Resistors (R)                     =          49
+  Voltage Sources (V)               =          28
+
+Number of subcircuits (X)           =           4
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Readin                            =        0.00
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time                    =        0.00
+

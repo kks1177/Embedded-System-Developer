@@ -1,0 +1,57 @@
+
+**** 01/10/22 21:11:47 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\work_OrCAD\0_homework\hw_0110-PSpiceFiles\SCHEMATIC1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/work_OrCAD/1_library/kks_device.lib" 
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 101 1 1G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW_0110
+R_R2         0 REF  10k TC=0,0 
+R_R1         REF VCC  10k TC=0,0 
+C_C1         0 REF  1u  TC=0,0 
+V_V1         VCC 0 50Vdc
+C_C2         VSIN N03585  1u  TC=0,0 
+R_R6         REF N03585  1k TC=0,0 
+R_R8         REF N03723  1k TC=0,0 
+R_R7         N03723 SINGLE  99k TC=0,0 
+R_R3         0 VAC  1k TC=0,0 
+R_R4         N03709 DUAL  1k TC=0,0 
+R_R5         0 N03709  1k TC=0,0 
+X_U3A         VAC N03709 VCC VEE DUAL RC4558
+X_U3B         N03585 N03723 VCC 0 SINGLE RC4558
+V_V5         VAC 0 DC 0Vdc AC 1Vac 
+V_V2         VEE 0 -12Vdc
+
+**** RESUMING tran.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VSIN.
+
+ERROR(ORPSIM-15142): Node VSIN is floating
+

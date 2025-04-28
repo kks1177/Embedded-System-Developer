@@ -1,0 +1,21 @@
+\t (00:00:02) allegro 17.2 S002 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Sat Apr 23 15:39:28 2022
+\t (00:00:02)         Host=LAPTOP-C0UV23FV User=user Pid=12496 CPUs=8
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe -mpssession user C:\EMBEDDED_SYSTEM\01_CIRCUIT_PROG_INSTALL\WORK_ORCAD\4_PROJECT\PCB DESIGN\allegro\CCS.brd
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:06) Design opened: C:/EMBEDDED_SYSTEM/01_CIRCUIT_PROG_INSTALL/WORK_ORCAD/4_PROJECT/PCB DESIGN/allegro/CCS.brd
+\i (00:00:06) trapsize 7495
+\i (00:00:06) trapsize 7687
+\i (00:00:06) trapsize 10968
+\i (00:00:07) trapsize 8393
+\i (00:00:07) trapsize 9961
+\i (00:00:07) trapsize 10185
+\i (00:00:07) trapsize 8551
+\i (00:00:07) generaledit 
+\i (00:00:15) open 
+\i (00:00:17) fillin "CCS.brd"
+\t (00:00:17) Opening existing design...
+\i (00:00:17) trapsize 10954
+\t (00:00:17)     Journal end - Sat Apr 23 15:39:43 2022

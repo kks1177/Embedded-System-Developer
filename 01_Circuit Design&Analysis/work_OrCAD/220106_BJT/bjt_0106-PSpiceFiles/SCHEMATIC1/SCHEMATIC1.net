@@ -1,0 +1,34 @@
+* source BJT_0106
+V_V1         VCC 0 5
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R1         OUT1 VCC  1k TC=0,0 
+Q_Q1         OUT1 N00339 0 Q2N3904
+R_R2         IN N00339  47k TC=0,0 
+U_DSTM2         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R4         OUT2 VCC  1k TC=0,0 
+R_R3         IN N01229  47k TC=0,0 
+Q_Q2         OUT2 N01229 0 Q2N3904
+R_R5         0 N01229  47k TC=0,0 
+R_R7         IN N02634  10k TC=0,0 
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R6         N02558 VCC  47 TC=0,0 
+Q_Q3         OUT3 N02634 0 Qmmbt3904tt1
+D_D1         N02558 OUT3 UPWLEDxx 

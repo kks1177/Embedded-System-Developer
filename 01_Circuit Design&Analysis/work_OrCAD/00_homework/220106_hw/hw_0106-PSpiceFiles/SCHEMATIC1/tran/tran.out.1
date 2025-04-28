@@ -1,0 +1,149 @@
+
+**** 01/07/22 00:03:40 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\work_OrCAD\hw_0106-pspicefiles\schematic1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6m 0 6u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW_0106
+D_D1         A OUT D1N4148 
+D_D2         B OUT D1N4148 
+R_R1         0 OUT  1k TC=0,0 
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND A IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+U_DSTM2         STIM(1,1) $G_DPWR $G_DGND B IO_STM IO_LEVEL=0 
++ 0 0
++ +2m 1
++REPEAT FOREVER
++ +2m 0
++  +2m 1
++ ENDREPEAT
+D_D3         OUT1 C D1N4148 
+D_D4         OUT1 D D1N4148 
+R_R2         OUT1 VCC  1k TC=0,0 
+V_V1         VCC 0 5
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND C IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+U_DSTM4         STIM(1,1) $G_DPWR $G_DGND D IO_STM IO_LEVEL=0 
++ 0 0
++ +2m 1
++REPEAT FOREVER
++ +2m 0
++  +2m 1
++ ENDREPEAT
+D_D5         USB N06714 D1N4148 
+U_DSTM5         STIM(1,1) $G_DPWR $G_DGND USB IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+V_V2         LI-ION 0 3.7
+D_D6         LI-ION OUT2 D1N4148 
+R_R3         0 N06714  1k TC=0,0 
+
+**** RESUMING tran.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node A
+*
+* Moving U_DSTM1:OUT1 from analog node A to new digital node A$DtoA
+X$A_DtoA1
++ A$DtoA
++ A
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface for node B
+*
+* Moving U_DSTM2:OUT1 from analog node B to new digital node B$DtoA
+X$B_DtoA1
++ B$DtoA
++ B
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface for node C
+*
+* Moving U_DSTM3:OUT1 from analog node C to new digital node C$DtoA
+X$C_DtoA1
++ C$DtoA
++ C
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface for node D
+*
+* Moving U_DSTM4:OUT1 from analog node D to new digital node D$DtoA
+X$D_DtoA1
++ D$DtoA
++ D
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface for node USB
+*
+* Moving U_DSTM5:OUT1 from analog node USB to new digital node USB$DtoA
+X$USB_DtoA1
++ USB$DtoA
++ USB
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+ERROR(ORPSIM-15141): Less than 2 connections at node OUT2.
+

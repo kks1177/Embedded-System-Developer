@@ -1,0 +1,24 @@
+  Revised: Thursday, April 21, 2022
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials          April 21,2022      9:39:06	Page1
+
+Item	Quantity	Reference	Part	PCB Footprint
+______________________________________________
+
+1	2	C1,C2	47u	smc0603
+2	10	D1,D2,D3,D4,D5,D6,D7,D8,	LED	smd080512
+		D9,D10
+3	1	J1	CON2	jumper2
+4	2	R1,R2	1k	smr0603
+5	10	R3,R4,R5,R6,R7,R8,R9,R10,	100	smr0603
+		R11,R12
+6	1	U1	7400	soic14
+7	1	U2	7490	soic14
+8	1	U3	7442	soic16

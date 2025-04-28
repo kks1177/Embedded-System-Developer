@@ -1,0 +1,18 @@
+* source NON_INVERTINGAMP_0110
+V_V4         VSIN 0  
++SIN 0 0.5 1k 0 0 0
+V_V3         VCC2 0 6Vdc
+R_R1         REF VCC  10k TC=0,0 
+V_V1         VCC 0 12Vdc
+V_V2         VEE 0 -12Vdc
+R_R2         0 REF  10k TC=0,0 
+C_C1         0 REF  1u  TC=0,0 
+X_U1A         VSIN N01530 VCC VEE DUAL LM324
+R_R3         0 VSIN  1k TC=0,0 
+R_R4         N01530 DUAL  1k TC=0,0 
+R_R5         0 N01530  1k TC=0,0 
+X_U1B         N02458 N02522 VCC 0 SINGLE LM324
+R_R7         N02522 SINGLE  1k TC=0,0 
+R_R8         REF N02522  1k TC=0,0 
+R_R6         REF N02458  1k TC=0,0 
+C_C2         VSIN N02458  1u  TC=0,0 

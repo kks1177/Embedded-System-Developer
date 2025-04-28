@@ -1,0 +1,19 @@
+* source HW_0105
+R_R1         0 OUT  1k TC=0,0 
+C_C1         0 OUT  100uF  TC=0,0 
+V_V2         VCC 0 12
+R_R2         VCC N00441  270 TC=0,0 
+L_L1         N00441 NON  47m  
+R_R3         VCC N00695  270 TC=0,0 
+L_L2         N00695 DIODE  47m  
+L_L3         N00838 RC  47m  
+R_R4         VCC N00838  270 TC=0,0 
+C_C2         VCC N01079  1u  TC=0,0 
+X_U1         NON 0 Sw_tOpen PARAMS: tOpen=1m ttran=1u Rclosed=0.01 Ropen=1Meg
+X_U2         DIODE 0 Sw_tOpen PARAMS: tOpen=1m ttran=1u Rclosed=0.01 Ropen=1Meg
+X_U3         RC 0 Sw_tOpen PARAMS: tOpen=1m ttran=1u Rclosed=0.01 Ropen=1Meg
+V_V1         IN 0  
++SIN 0 {220 * 1.414} 60Hz 0 0 0
+D_D1         IN OUT Dbreak 
+D_D2         DIODE VCC D1N4148 
+R_R5         N01079 RC  150 TC=0,0 

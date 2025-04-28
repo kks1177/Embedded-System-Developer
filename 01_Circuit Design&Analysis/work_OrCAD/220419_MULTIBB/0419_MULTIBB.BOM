@@ -1,0 +1,26 @@
+  Revised: Tuesday, April 19, 2022
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials          April 20,2022      9:23:09	Page1
+
+Item	Quantity	Reference	Part	PCB Footprint
+______________________________________________
+
+1	1	BT1	9	do41
+2	1	C1	47u	to92
+3	1	D1	LED	to92
+4	1	Q1	2N3904	to92
+5	2	R1,R7	10k	res400
+6	2	R2,R5	22k	res400
+7	1	R3	4.7k	res400
+8	1	R4	6.8k	res400
+9	1	R6	47k	res400
+10	1	SW1	SW PUSHBUTTON	capck06
+11	1	2N1	NPN BCE	jumper2
+12	1	2N2	NPN BCE	cap196

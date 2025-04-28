@@ -1,0 +1,65 @@
+
+**** 01/11/22 13:54:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\WORK_ORCAD\3_Project\0111_Single_Sonic-PSpiceFiles\SCHEMATIC1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/WORK_ORCAD/1_library/kks_device.lib" 
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100u 0 100n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 0111_SINGLE_SONIC
+V_V3         VCC2 0 6Vdc
+V_V2         VEE 0 -12Vdc
+V_V1         VCC 0 12Vdc
+X_U5C         REF N11415 VCC 0 SINGLE2 RC4558
+C_C4         SINGLE2 N11673  1n  TC=0,0 
+R_R9         N11371 SINGLE1  100k TC=0,0 
+C_C1         0 REF  1u  TC=0,0 
+R_R1         REF VCC  10k TC=0,0 
+X_U5B         REF N11371 VCC 0 SINGLE1 RC4558
+R_R11         N11547 N11371  10k TC=0,0 
+R_R2         0 REF  10k TC=0,0 
+R_R12         SINGLE1 N11415  10k TC=0,0 
+R_R10         N11415 SINGLE2  100k TC=0,0 
+C_C3         RX N11547  1n  TC=0,0 
+V_V5         N12634 0  
++SIN 3.5 10m 40k 0 0 0
+V_V6         N12651 0  
++PWL 0 0 1m 0 1.01m 1 20m 1 20.01m 0 
+E_MULT1         RX 0 VALUE {V(N12651)*V(N12634)}
+C_C5         0 N12878  680p  TC=0,0 
+D_D1         N11673 N12878 1ss106 
+D_D2         0 N11673 1ss106 
+
+**** RESUMING tran.cir ****
+.END
+
+
+ERROR(ORPSIM-15113): Model 1ss106 used by D_D1 is undefined
+
+ERROR(ORPSIM-15113): Model 1ss106 used by D_D2 is undefined
+

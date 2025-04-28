@@ -1,0 +1,22 @@
+<HTML><HEAD><STYLE TYPE="text/css">.errorMessage { color:darkred; font-weight:bold; font-style:italic; text-decoration:underline; }</STYLE></HEAD><BODY><PRE>
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : CCS_2.brd                                     )
+(    Software Version : 17.2S002                                      )
+(    Date/Time        : Sat Apr 23 14:26:25 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 2
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+	Point on shape: <a href="xprobe:xy:2233.98 1131.37">(2233.98 1131.37)</a>  Net: GND
+	Point on shape: <a href="xprobe:xy:2191.02 1219.63">(2191.02 1219.63)</a>  Net: GND
+</PRE>
+</BODY></HTML>

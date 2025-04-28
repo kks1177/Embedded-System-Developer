@@ -1,0 +1,5 @@
+ lib=C:\Embedded_System\01_Circuit_prog_install\work_OrCAD\1_library\kks_device.lib, offset=4034, size=472
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_io.lib, offset=9827, size=143
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_io.lib, offset=10217, size=258
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_io.lib, offset=7572, size=259
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\dig_io.lib, offset=11016, size=366
