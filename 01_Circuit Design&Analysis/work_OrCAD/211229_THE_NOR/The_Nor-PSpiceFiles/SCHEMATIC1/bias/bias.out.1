@@ -1,0 +1,61 @@
+
+**** 12/29/21 12:25:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\work_OrCAD\The_Nor-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source THE_NOR
+R_R1         B A  2k TC=0,0 
+R_R2         B A  2k TC=0,0 
+R_R3         N00300 B  500 TC=0,0 
+R_R4         A N00420  500 TC=0,0 
+V_V1         N00300 0 3Vdc
+R_R5         N00455 B  1k TC=0,0 
+R_R6         N00451 A  1k TC=0,0 
+I_I1         0 N00455 DC 2mA  
+I_I2         0 N00451 DC 2mA  
+V_V2         N00420 0 6Vdc
+R_R7         B A  {RL} TC=0,0 
+R_R8         N01398 AT  500 TC=0,0 
+R_R9         0 AN  500 TC=0,0 
+I_I3         0 AN DC 3m  
+V_V3         N01398 0 1.5Vdc
+R_R11         0 AT  {RL} TC=0,0 
+R_R12         0 AN  {RL} TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nomd.ind for library file nomd.lib.
+
+INFO(ORPSIM-15422): Making new index file nomd.ind for library file nomd.lib.
+
+Index has 34102 entries from 205 file(s).
+
+ERROR(ORPSIM-15167): Undefined parameter: RL.
+

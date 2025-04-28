@@ -1,0 +1,18 @@
+* source HW_0110
+R_R2         0 REF  10k TC=0,0 
+R_R1         REF VCC  10k TC=0,0 
+C_C1         0 REF  1u  TC=0,0 
+V_V1         VCC 0 30Vdc
+C_C2         VAC N03585  1u  TC=0,0 
+R_R6         REF N03585  1k TC=0,0 
+R_R8         REF N03723  1k TC=0,0 
+R_R7         N03723 SINGLE  99k TC=0,0 
+R_R3         0 VAC  1k TC=0,0 
+R_R4         N03709 DUAL  99k TC=0,0 
+R_R5         0 N03709  1k TC=0,0 
+X_U3A         VAC N03709 VCC VEE DUAL RC4558
+X_U3B         N03585 N03723 VCC 0 SINGLE RC4558
+V_V5         VAC 0 DC 0Vdc AC 1Vac 
+V_V2         VEE 0 -30Vdc
+V_V4         VSIN 0  
++SIN 0 0.1 3.3k 0 0 0

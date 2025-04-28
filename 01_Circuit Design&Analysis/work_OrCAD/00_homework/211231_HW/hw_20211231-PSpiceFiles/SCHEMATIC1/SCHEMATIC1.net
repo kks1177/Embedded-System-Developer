@@ -1,0 +1,10 @@
+* source HW_20211231
+R_R1         AC LPF_1M  1k TC=0,0 
+C_C1         0 LPF_1M  1n  TC=0,0 
+R_R2         0 HPF_1K  1k TC=0,0 
+C_C2         HPF_1K AC  1u  TC=0,0 
+C_C3         N00922 AC  1u  TC=0,0 
+R_R3         0 N00922  1k TC=0,0 
+R_R4         N00922 BPF_1K_1M  1k TC=0,0 
+C_C4         0 BPF_1K_1M  1n  TC=0,0 
+V_V1         AC 0 DC 0Vdc AC 1Vac 
