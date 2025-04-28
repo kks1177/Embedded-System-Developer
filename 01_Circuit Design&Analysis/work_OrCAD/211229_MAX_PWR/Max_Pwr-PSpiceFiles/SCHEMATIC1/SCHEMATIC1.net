@@ -1,0 +1,5 @@
+* source MAX_PWR
+V_V1         N00126 0 10V
+R_RS         N00126 N00135  100 TC=0,0 
+R_RL         0 N00135  {R} TC=0,0 
+.PARAM  r=1k

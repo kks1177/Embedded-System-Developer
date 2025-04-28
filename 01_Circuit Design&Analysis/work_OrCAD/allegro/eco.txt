@@ -1,0 +1,120 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:.../01_CIRCUIT_PROG_INSTALL/WORK_ORCAD/allegro/0419_MULTIBB.brd           |
+|                                                    Wed Apr 20 09:44:54 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  0            pins ADDED TO this new net
+                                 BT1.2          Q1.3           Q2.3           
+                                 Q3.3           R7.1           SW1.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00341       pins ADDED TO this new net
+                                 C1.1           Q1.2           R1.2           
+                                 SW1.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00463       pins ADDED TO this new net
+                                 C1.2           Q2.1           R2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00650       pins ADDED TO this new net
+                                 Q1.1           R5.1           R7.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00681       pins ADDED TO this new net
+                                 Q2.2           R3.2           R5.2           
+                                 R6.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00806       pins ADDED TO this new net
+                                 Q3.1           R6.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04472       pins ADDED TO this new net
+                                 D1.2           R4.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N05259       pins ADDED TO this new net
+                                 D1.1           Q3.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC          pins ADDED TO this new net
+                                 BT1.1          R1.1           R2.1           
+                                 R3.1           R4.1           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:.../01_CIRCUIT_PROG_INSTALL/WORK_ORCAD/allegro/0419_MULTIBB.brd           |
+|                                                    Wed Apr 20 09:44:54 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ BATTERY_JUMPER2_9
+ CAP POL_CAP196_47U
+ LED_DO41_LED
+ NPN BCE_TO92_2N3904
+ R_RES400_4.7K
+ R_RES400_6.8K
+ R_RES400_10K
+ R_RES400_22K
+ R_RES400_47K
+ SW PUSHBUTTON_CAPCK06_SW PUSHBU
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../01_CIRCUIT_PROG_INSTALL/WORK_ORCAD/allegro/0419_MULTIBB.brd           |
+|                                                    Wed Apr 20 09:44:54 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ BT1                 BATTERY_JUMPER2_9     
+ C1                  CAP POL_CAP196_47U    
+ D1                  LED_DO41_LED          
+ Q1                  NPN BCE_TO92_2N3904   
+ Q2                  NPN BCE_TO92_2N3904   
+ Q3                  NPN BCE_TO92_2N3904   
+ R1                  R_RES400_10K          
+ R2                  R_RES400_22K          
+ R3                  R_RES400_4.7K         
+ R4                  R_RES400_6.8K         
+ R5                  R_RES400_22K          
+ R6                  R_RES400_47K          
+ R7                  R_RES400_10K          
+ SW1                 SW PUSHBUTTON_CAPCK06_SW PUSHBU 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../01_CIRCUIT_PROG_INSTALL/WORK_ORCAD/allegro/0419_MULTIBB.brd           |
+|                                                    Wed Apr 20 09:44:54 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ BT1.2                          PRIM_FILE      .\pstchip.dat
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ D1.1                           PRIM_FILE      .\pstchip.dat
+ Q1.3                           PRIM_FILE      .\pstchip.dat
+ Q2.3                           PRIM_FILE      .\pstchip.dat
+ Q3.3                           PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R3.2                           PRIM_FILE      .\pstchip.dat
+ R4.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ SW1.2                          PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Nets changed          :      31                                        |
+|       Comp definitions added:      10                                        |
+|       Components added      :      14                                        |
+|       Slot property added   :      14                                        |
+|                                                                              |
+|   Total ECO changes reported:      69                                        |
+|------------------------------------------------------------------------------|

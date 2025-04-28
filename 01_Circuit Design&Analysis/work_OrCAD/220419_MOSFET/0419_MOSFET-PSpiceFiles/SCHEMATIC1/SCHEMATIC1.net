@@ -1,0 +1,13 @@
+* source 0419_MOSFET
+V_V1         VCC 0 12
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +50m 1
++REPEAT FOREVER
++ +50m 0
++  +50m 1
++ ENDREPEAT
+R_R1         VCC N00479  47k TC=0,0 
+R_R2         IN N00479  10k TC=0,0 
+R_R3         0 OUT1  1k TC=0,0 
+M_M1         OUT1 N00479 VCC VCC CEDM8001           
