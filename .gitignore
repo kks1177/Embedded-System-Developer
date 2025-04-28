@@ -1,0 +1,337 @@
+# ========================================
+# 공통 무시 항목 (OS, 편집기 등)
+# ========================================
+.DS_Store
+Thumbs.db
+*~
+*.log
+*.bak
+*.swp
+*.tmp
+*.temp
+*.hwp
+*.pptx
+*.pdf
+.vscode/
+.cursor/
+
+# ========================================
+# C, C++ 관련 무시 항목
+# ========================================
+*.exe
+*.obj
+*.o
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.app
+
+*.slo
+*.lo
+*.smod
+*.mod
+*.lai
+*.la
+
+*.gch
+*.pch
+*.d
+
+bin/
+build/
+Debug/
+Release/
+data/
+
+# Visual Studio 설정 및 출력 파일
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+*.cache
+*.ncb
+*.opensdf
+*.sdf
+[Bb]in/
+[Oo]bj/
+*.psess
+*.vsp
+*.vspx
+*.vspscc
+*_i.c
+*_p.c
+*.ilk
+*.idb
+*.pdb
+*.tlog
+*.lastbuildstate
+
+# CMake 사용 시 (Visual Studio + CMake 혼합)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ========================================
+# Java 관련 무시 항목
+# ========================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+hs_err_pid*
+replay_pid*
+*.ctxt
+.mtj.tmp/
+
+target/
+.gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# ========================================
+# Python 관련 무시 항목
+# ========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+*.so
+*.sage.py
+
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pdm.toml
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.spec
+*.manifest
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 테스트 / 커버리지
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# 문서 빌드
+docs/_build/
+.site
+
+# Django / Flask 등
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+.scrapy
+
+# 기타 IDE
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# Jupyter
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# 정적 분석
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# 기타
+.pypirc
+
+
+
+
+
+# ========================================
+# 01_Circuit
+# ========================================
+# OrCAD 백업 파일
+*.DBK
+
+# OrCAD 락 파일
+*.DSNlck
+*.opjlck
+
+# 시뮬레이션 결과 파일
+*/01_Circuit/work_OrCAD/*-PSpiceFiles/*/*.dat
+*/01_Circuit/work_OrCAD/*-PSpiceFiles/*/*.csd
+*/01_Circuit/work_OrCAD/*-PSpiceFiles/*/*.mif
+*/01_Circuit/work_OrCAD/*-PSpiceFiles/*/*.prb
+*/01_Circuit/work_OrCAD/*-PSpiceFiles/*/profile
+
+# 임시 파일
+*.rpt
+*.dml.err
+
+# OrCAD 관련 파일 - 루트에 중복되지 않는 항목들
+# 캐시 및 임시 파일
+**/allegro/**/*.jrl
+**/allegro/**/*.tag
+**/allegro/**/*.log
+**/allegro/**/*.dra~
+**/*.dra~
+**/*.bak
+**/*.swp
+
+# 생성된 출력 파일
+**/allegro/**/gbr/
+**/allegro/**/nc/
+**/allegro/**/pdf/
+**/allegro/**/*.art
+**/allegro/**/*.rou
+**/allegro/**/*.fab
+**/allegro/**/*.drl
+
+# 시뮬레이션 자동 생성 파일
+**/*.aof
+**/*.wdb
+**/*.sdf
+**/*.als
+**/*.mrk
+
+# 특정 대용량 파일 (용량이 큰 OrCAD 파일들)
+**/*.olb [200MB]
+**/*.dml [50MB]
+
+# 보안 관련 파일
+**/CCF-IC-인증서*.pdf
+
+# 설치 파일 제외
+*.zip
+
+
+
+# ========================================
+# 03_Firmware
+# ========================================
+01-회로설계와 분석/
+# 빌드 결과물
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.ind
+
+# IDE 관련 파일
+.codelite/
+*.workspace.session
+*.workspace.session.*
+build-Debug/
+build-Release/
+tags
+
+# 선택적으로 포함/제외 (필요에 따라 주석 처리)
+# *.workspace
+
+# STM32CubeMX 생성 파일
+.mxproject
+
+# Keil MDK-ARM 관련 파일
+*.uvguix.*
+*.uvoptx.bak
+*.uvprojx.bak
+*.scvd
+RTE/
+*.uvguix.user
+*_uvprojx.bak
+
+# 추가 컴파일 결과물
+*.crf
+*.axf
+*.lnp
+*.dep
+*.build_log.htm
+*.htm
+*.iex
+*.sct
+
+
+
+# ========================================
+# 04_LabVIEW
+# ========================================
+
+
+
+
+# ========================================
+# 05_RaspberryPi
+# ========================================
+
+
+
+
+# ========================================
+# 06_Final-Project
+# ========================================
+
+
+

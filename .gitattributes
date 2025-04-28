@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# 공통 설정
+*.md text eol=lf
+*.gitattributes text eol=lf
+*.gitignore text eol=lf
+*.yml text eol=lf
+
+# 언어별
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.h text eol=lf
+*.java text eol=lf
+*.py text eol=lf
