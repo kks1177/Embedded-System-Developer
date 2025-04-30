@@ -162,7 +162,6 @@ htmlcov/
 .nox/
 .coverage
 .coverage.*
-.cache
 nosetests.xml
 coverage.xml
 *.cover
@@ -217,7 +216,6 @@ dmypy.json
 
 # OrCAD 락 파일
 *.DSNlck
-*.opjlck
 
 # 시뮬레이션 결과 파일
 */01_Circuit/work_OrCAD/*-PSpiceFiles/*/*.dat
@@ -228,31 +226,21 @@ dmypy.json
 
 # 임시 파일
 *.rpt
-*.dml.err
 
 # OrCAD 관련 파일 - 루트에 중복되지 않는 항목들
 # 캐시 및 임시 파일
 **/allegro/**/*.jrl
 **/allegro/**/*.tag
 **/allegro/**/*.log
-**/allegro/**/*.dra~
-**/*.dra~
 **/*.bak
-**/*.swp
 
 # 생성된 출력 파일
 **/allegro/**/gbr/
 **/allegro/**/nc/
-**/allegro/**/pdf/
 **/allegro/**/*.art
-**/allegro/**/*.rou
-**/allegro/**/*.fab
 **/allegro/**/*.drl
 
 # 시뮬레이션 자동 생성 파일
-**/*.aof
-**/*.wdb
-**/*.sdf
 **/*.als
 **/*.mrk
 
@@ -269,13 +257,57 @@ dmypy.json
 
 
 # ========================================
+# 02_ImageProcessing
+# ========================================
+# 임시 및 출력 폴더
+images/temp/
+images/output/
+images/processed/
+*_result/
+*_output/
+temp_*/
+**/temp_images/
+**/output_images/
+**/cache/
+# 특정 이미지 폴더 (선택적 제외)
+images/Pet_RAW(squre)/*
+images/Gallery/*
+images/ggg/*
+images/Etc_Raw(squre)/*
+# 해상도별 폴더
+**/512/
+**/256/
+**/128/
+
+# 이미지 파일 확장자 (일반 이미지 파일)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+# 이미지 파일 확장자 (RAW 이미지 파일)
+*.raw
+*.RAW
+
+# 데이터셋
+dataset/
+training_data/
+**/processed_data/*.bin
+**/processed_data/*.npy
+
+# 예외 처리 - 포함할 파일 (테스트용 이미지 포함)
+!images/Gallery/sample*.jpg
+!images/Gallery/test*.png
+
+
+
+# ========================================
 # 03_Firmware
 # ========================================
 01-회로설계와 분석/
 # 빌드 결과물
 *.hex
 *.bin
-*.elf
 *.map
 *.lst
 *.ind
@@ -284,8 +316,6 @@ dmypy.json
 .codelite/
 *.workspace.session
 *.workspace.session.*
-build-Debug/
-build-Release/
 tags
 
 # 선택적으로 포함/제외 (필요에 따라 주석 처리)
