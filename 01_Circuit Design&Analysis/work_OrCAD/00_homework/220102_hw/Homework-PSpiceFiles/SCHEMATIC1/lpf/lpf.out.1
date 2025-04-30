@@ -1,0 +1,50 @@
+
+**** 01/02/22 14:29:14 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lpf"  [ C:\work_OrCAD\homework-pspicefiles\schematic1\lpf.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lpf.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 101 1 1G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HOMEWORK
+V_V1         AC 0 DC 0Vdc AC 1Vac 
+R_R1         AC LPF_1M  1k TC=0,0 
+C_C1         0 LPF_1M  1n  TC=0,0 
+V_V2         AC 0 DC 0Vdc AC 1Vac 
+C_C2         HPF_1K AC  1u  TC=0,0 
+R_R2         HPF_1K 0  1k TC=0,0 
+C_C3         N01592 AC  1u  TC=0,0 
+R_R3         N01592 0  1k TC=0,0 
+V_V3         AC 0 DC 0Vdc AC 1Vac 
+R_R4         N01592 BPF_1K_1M  1k TC=0,0 
+C_C4         0 BPF_1K_1M  1n  TC=0,0 
+
+**** RESUMING lpf.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V2. You may break the loop by adding a series resistance
+

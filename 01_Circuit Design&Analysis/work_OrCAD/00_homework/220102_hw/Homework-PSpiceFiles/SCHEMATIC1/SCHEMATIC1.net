@@ -1,0 +1,12 @@
+* source HOMEWORK
+V_V1         AC 0 DC 0Vdc AC 1Vac 
+R_R1         AC LPF_1M  1k TC=0,0 
+C_C1         0 LPF_1M  1n  TC=0,0 
+V_V2         AC 0 DC 0Vdc AC 1Vac 
+C_C2         HPF_1K AC  1u  TC=0,0 
+R_R2         HPF_1K 0  1k TC=0,0 
+C_C3         N01592 AC  1u  TC=0,0 
+R_R3         N01592 0  1k TC=0,0 
+V_V3         AC 0 DC 0Vdc AC 1Vac 
+R_R4         N01592 BPF_1K_1M  1k TC=0,0 
+C_C4         0 BPF_1K_1M  1n  TC=0,0 

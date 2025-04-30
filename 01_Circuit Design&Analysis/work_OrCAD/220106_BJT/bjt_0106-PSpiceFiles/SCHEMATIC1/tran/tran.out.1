@@ -1,0 +1,72 @@
+
+**** 01/07/22 12:38:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-tran"  [ C:\work_OrCAD\bjt_0106-pspicefiles\schematic1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\user\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 50u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BJT_0106
+V_V1         VCC 0 5
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R1         OUT1 VCC  1k TC=0,0 
+Q_Q1         OUT1 N00339 0 Q2N3904
+R_R2         IN N00339  47k TC=0,0 
+U_DSTM2         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R4         OUT2 VCC  1k TC=0,0 
+R_R3         IN N01229  47k TC=0,0 
+Q_Q2         OUT2 N01229 0 Q2N3904
+R_R5         0 N01229  47k TC=0,0 
+R_R7         IN N02634  47k TC=0,0 
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND IN IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5m 1
++REPEAT FOREVER
++ +0.5m 0
++  +0.5m 1
++ ENDREPEAT
+R_R6         N02558 VCC  1k TC=0,0 
+Q_Q3         OUT3 N02634 0 Q2N3904
+D_D1         N02558 OUT3 UPWLEDxx 
+
+**** RESUMING tran.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model UPWLEDxx used by D_D1 is undefined
+

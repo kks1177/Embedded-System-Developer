@@ -1,0 +1,11 @@
+* source RLC
+V_V1         PUL 0  AC 1
++PULSE 0 1 0 1u 1u 15m 30m
+R_R1         AC LPF_1K  1k TC=0,0 
+C_C1         0 LPF_1K  1u  TC=0,0 
+V_V2         AC 0 DC 0Vdc AC 1Vac 
+L_L2         PUL LPF_L  1H  
+R_R8         0 LPF_L  1k TC=0,0 
+C_C2         LPF_LC 0  1u  TC=0,0 
+L_L1         N03182 LPF_LC  1u  
+R_R9         PUL N03182  3 TC=0,0 

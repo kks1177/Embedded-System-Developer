@@ -1,0 +1,6 @@
+* source HW_220103
+L_L1         N00493 0  0.37n  
+C_C1         MLCC N00481  10000p  TC=0,0 
+R_R2         MLCC N00481  10G TC=0,0 
+R_R1         N00481 N00493  0.0669 TC=0,0 
+I_I1         MLCC 0 DC 0Adc AC 1Aac 
