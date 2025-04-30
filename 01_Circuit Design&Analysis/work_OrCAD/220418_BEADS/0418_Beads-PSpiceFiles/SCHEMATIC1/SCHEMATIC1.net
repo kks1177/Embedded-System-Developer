@@ -1,0 +1,26 @@
+* source 0418_BEADS
+C_C1         AC N00232  0.1p  TC=0,0 
+V_V1         AC 0 DC 0Vdc AC 1Vac 
+R_Rp         N00232 0  4m TC=0,0 
+R_R1         AC N00232  30 TC=0,0 
+R_Rs         N00553 0  0.69 TC=0,0 
+R_R2         AC N00553  420 TC=0,0 
+C_C2         AC N00553  0.24p  TC=0,0 
+L_L1         AC N00232  0.17u  
+L_L2         AC N00553  0.06u  
+L_L3         N01772 N01782  0.17u  
+C_C3         N01772 N01782  0.1p  TC=0,0 
+C_C4         N01926 N01936  0.24p  TC=0,0 
+L_L4         N01926 N01936  0.06u  
+R_Rs1         N01936 SIG  0.69 TC=0,0 
+R_R3         N01772 N01782  30 TC=0,0 
+R_R4         N01926 N01936  420 TC=0,0 
+R_Rp1         N01782 PWR  4m TC=0,0 
+R_R6         N01772 NOISE  50 TC=0,0 
+R_R8         PWR 0  50 TC=0,0 
+R_R7         N01926 NOISE  50 TC=0,0 
+R_R9         SIG 0  50 TC=0,0 
+V_V2         NOISE N03399  
++PULSE 0 1 50n 1n 1n 50n 100n
+V_V3         N03399 0  
++SIN 0 10m 1G 0 0 0

@@ -1,0 +1,47 @@
+* source HW_0106
+D_D1         A OUT D1N4148 
+D_D2         B OUT D1N4148 
+R_R1         0 OUT  1k TC=0,0 
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND A IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+U_DSTM2         STIM(1,1) $G_DPWR $G_DGND B IO_STM IO_LEVEL=0 
++ 0 0
++ +2m 1
++REPEAT FOREVER
++ +2m 0
++  +2m 1
++ ENDREPEAT
+D_D3         OUT1 C D1N4148 
+D_D4         OUT1 D D1N4148 
+R_R2         OUT1 VCC  1k TC=0,0 
+V_V1         VCC 0 5
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND C IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+U_DSTM4         STIM(1,1) $G_DPWR $G_DGND D IO_STM IO_LEVEL=0 
++ 0 0
++ +2m 1
++REPEAT FOREVER
++ +2m 0
++  +2m 1
++ ENDREPEAT
+D_D5         USB OUT2 D1N4148 
+U_DSTM5         STIM(1,1) $G_DPWR $G_DGND USB IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+V_V2         LI-ION 0 3.7
+D_D6         LI-ION OUT2 D1N4148 
+R_R3         0 OUT2  1k TC=0,0 

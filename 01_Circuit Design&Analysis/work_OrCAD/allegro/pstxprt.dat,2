@@ -1,0 +1,150 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Apr-20-2022 at 09:36:07 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='0419_MULTIBB';
+ POST_TIME='Mar  2 2016 00:37:24';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ 2N1 'NPN BCE_JUMPER2_NPN BCE':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS348@TRANSISTOR.NPN BCE.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins348@transistor.\npn bce.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins348@transistor.\npn bce.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ 2N2 'NPN BCE_CAP196_NPN BCE':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS723@TRANSISTOR.NPN BCE.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins723@transistor.\npn bce.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins723@transistor.\npn bce.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ BT1 'BATTERY_DO41_9':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS230@DISCRETE.BATTERY.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins230@discrete.\battery.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins230@discrete.\battery.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C1 'CAP POL_TO92_47U':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS205@DISCRETE.CAP POL.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins205@discrete.\cap pol.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins205@discrete.\cap pol.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'LED_TO92_LED':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS255@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins255@discrete.\led.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins255@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q1 'NPN BCE_TO92_2N3904':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS289@TRANSISTOR.NPN BCE.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins289@transistor.\npn bce.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins289@transistor.\npn bce.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_RES400_10K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS26@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins26@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins26@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'R_RES400_22K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS100@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins100@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins100@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'R_RES400_4.7K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS116@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins116@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins116@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'R_RES400_6.8K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS132@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins132@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins132@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'R_RES400_22K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS148@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins148@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins148@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'R_RES400_47K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS164@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins164@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins164@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'R_RES400_10K':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS180@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins180@discrete.\r.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins180@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'SW PUSHBUTTON_CAPCK06_SW PUSHBU':;
+
+SECTION_NUMBER 1
+ '@0419_MULTIBB.SCHEMATIC1(SCH_1):INS316@DISCRETE.SW PUSHBUTTON.NORMAL(CHIPS)':
+ C_PATH='@\0419_multibb\.schematic1(sch_1):ins316@discrete.\sw pushbutton.normal\(chips)',
+ P_PATH='@\0419_multibb\.schematic1(sch_1):page1_ins316@discrete.\sw pushbutton.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.
