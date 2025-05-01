@@ -1,0 +1,28 @@
+osEventFlagsId_t evt_id;                        // message queue id
+ 
+int Init_Events (void) {
+ 
+  evt_id = osEventFlagsNew(NULL);
+  if (evt_id == NULL) {
+    ; // Event Flags object not created, handle failure
+    return(-1);
+  }
+  return(0);
+}
+
+void Thread_EventSender (void *argument) {
+ 
+  while (1) {    
+    osEventFlagsSet(evt_id, 0x00000001U);
+    osThreadYield();                            // suspend thread
+  }
+}
+
+void Thread_EventReceiver (void *argument) {
+  uint32_t flags;
+ 
+  while (1) {
+    flags = osEventFlagsWait(evt_id, 0x00000001U, osFlagsWaitAny, osWaitForever);
+    //handle event
+  }
+}
