@@ -296,6 +296,8 @@ dataset/
 training_data/
 **/processed_data/*.bin
 **/processed_data/*.npy
+*.csv
+*.dmp
 
 # 예외 처리 - 포함할 파일 (테스트용 이미지 포함)
 !images/Gallery/sample*.jpg
