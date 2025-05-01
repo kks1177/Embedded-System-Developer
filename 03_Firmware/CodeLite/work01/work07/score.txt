@@ -1,0 +1,3 @@
+Exam Result 
+Sum : 662 
+Average : 82.75 
