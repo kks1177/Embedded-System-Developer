@@ -1,0 +1,9 @@
+1青 :; for 16-bit app support
+2青 :[fonts]
+3青 :[extensions]
+4青 :[mci extensions]
+5青 :[files]
+6青 :[Mail]
+7青 :MAPI=1
+8青 :[ResponseResult]
+9青 :ResultCode=0
