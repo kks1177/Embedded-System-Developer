@@ -352,20 +352,115 @@ RTE/
 # ========================================
 # 04_LabVIEW
 # ========================================
+# LabVIEW 프로젝트 임시 파일
+*.aliases
+*.lvlps
+*.lvproj.bak*
+*.lvclass.bak
+*.lvtest.bak
 
+# LabVIEW 특정 빌드 출력
+*.rtexe
+*.lvcompile
+*.lvdist
+
+# LabVIEW 캐시 파일
+*.lvindexcache
+
+# VI 백업 파일
+*.vi.bak
+*~.vi
+
+# LabVIEW 데이터 로그
+*.tdms
+*.tdms_index
+
+# VI 서버 로그
+*.vilog
+
+# LabVIEW 특정 설정 및 구성
+hardware_config/
+device_settings/
+local_config.ini
+machine_specific_settings.xml
+workspace_settings/
+
+# LabVIEW 테스트 및 시뮬레이션
+test_results/
+simulation_data/
 
 
 
 # ========================================
 # 05_RaspberryPi
 # ========================================
+# 05_RaspberryPi 특화 .gitignore
 
+# GUI 관련
+*.ui.autosave
+.qt_for_python/
+*.qmlc
+*.jsc
 
+# AI 모델 관련
+*.weights
+*.pt
+*.pth
+*.h5
+
+# 소켓 통신 관련
+*.sock
+
+# 특정 실행 파일 (전체 exe가 아닌 특정 파일만 제외)
+HiBready Editor Setup 1.1.0
+Labelme
+J1C
+
+# AI-X 프로젝트 관련
+AI-X/model_specific/
+AI-X/custom_configs/
+
+# Jupyter 관련
+.jupyter/
+jupyter_example/custom_kernels/
 
 
 # ========================================
 # 06_Final-Project
 # ========================================
+# SLAM 관련
+ORB_SLAM2/build/
+ORB_SLAM2/lib/
+ORB_SLAM2/bin/
+ORB_SLAM2/Vocabulary/ORBvoc.txt
+ORB_SLAM2/Thirdparty/*/lib/
+ORB_SLAM2/Thirdparty/*/build/
+ORB_SLAM2/Examples/*/build/
+ORB_SLAM2/Examples/*/lib/
+ORB_SLAM2/Examples/*/bin/
+*.so.*
 
+# ROS 관련
+*.bag
+rosbag/
+.catkin_workspace
+devel/
+logs/
+build/
+bin/
+lib/
+msg_gen/
+srv_gen/
 
+# AI 학습 관련
+AI_Jupyter_Example/**/weights/
+AI_Jupyter_Example/**/pretrained/
+AI_Jupyter_Example/**/__pycache__/
+AI_Jupyter_Example/**/.ipynb_checkpoints/
+AI_Jupyter_Example/**/runs/
+AI_Jupyter_Example/**/results/
 
+# 프로젝트 문서 임시 파일
+~$*.pptx
+~$*.hwp
+.~lock.*
