@@ -5,7 +5,7 @@
 <!-- ---------------------------------------------------------------------------------------------- -->
 <!--## Contents-->
 <details open>
-<summary><h3> 📌 Contents </h3></summary>
+<summary><h3> 📌 목차 </h3></summary>
 
 1️⃣ [Circuit Design&Analysis](#-1️⃣-Circuit-DesignAnalysis-)
 
