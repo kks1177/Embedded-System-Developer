@@ -12,3 +12,6 @@
 *.h text eol=lf
 *.java text eol=lf
 *.py text eol=lf
+
+# 헤더 파일 깃허브에서 C++로 인식
+*.h linguist-language=C++
