@@ -1,0 +1,6 @@
+구글 액션 콘솔
+ >> 모델 ID <<
+aispeaker-ba6d9-my_ai_speaker-mkq97m
+
+ >> 인증 코드 <<
+https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=265075962212-p6nt17fo9bfutjp10mno4hi9ghet0vnv.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fassistant-sdk-prototype&state=HAkPhb0NiJYWFQnea3dmCe2kT0ICEh&prompt=consent&access_type=offline

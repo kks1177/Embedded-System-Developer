@@ -1,0 +1,22 @@
+10.10.13.169/24
+10.10.13.192/24
+
+VNC - 원격 접속하는 Tool
+
+//ftp.kaist.ac.kr/raspbian/raspbian/
+
+=================================
+
+cd : Change Directory
+sudo : SuperUser
+
+cd ~ : 홈 디렉토리로 이동
+cd .. : 상위 폴더로 이동
+ls : 현재 폴더 파일 목록
+
+GPIO : General Purpose Input Output
+parsing : 구문분석, 문장이 이루고 있는 구성 성분을 분해하고 분석하여 원하는 형태로 재조립하는 과정
+
+GPIO.setup(LED, GPIO.OUT) : 해당 핀은 OUTPUT으로 사용함을 선언
+except KeyboardInterrupt: : Ctrl+C키 입력되면 종료
+GPIO.cleanup() : 초기화

@@ -1,0 +1,30 @@
+{
+  "version": "4.5.9",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "triangle",
+      "points": [
+        [
+          104.68749999999999,
+          4.437499999999993
+        ],
+        [
+          4.910714285714286,
+          105.33035714285714
+        ],
+        [
+          205.13392857142856,
+          104.88392857142856
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "29.png",
+  "imageData": "iVBORw0KGgoAAAANSUhEUgAAANoAAACGAgMAAADGP3zEAAAACVBMVEX///8AAP+AgP9X4MPqAAABjklEQVR4nO3YuXEDMRBEURY9BIKQoJKJUJjE+ApVPJc45ugee9v/xnP7cjlH7i+XXX9zXfnJdbXdUp20nsmuraWApbUUsLaWAsq963x256WA5dElgA9eBijPrrPZk5cAlldHA188HijvrnPZm0cDy6cjgR8eC5Sj60x28Ehg+XYU8MvjgDJ0Hc8GHgUsY0cARx4DlKnraDbxCGCZOxg483CgLF3HsoUHA8vagcCVhwJXHgjceCBw44HAnYcBdx4EVHgQUOFBQI2HADUeAFR5AFDlAUCdFwN1Xgg0eCHQ4IVAixcBLV4ANHkB0OQFQJvnA22eC3R4LtDhuUCP5wE9ngN0eQ7Q5TlAn2cDfZ4JDHgmMOCZwIhnASOeAQx5BjDkGcCYpwMF6BQgwFOBAE8FVqRTgAJ1GxDiKUCIpwAr1m1AAbsFCPI2IMjbgBXtFqDA3QSEeQsQ5i3AincTUIhuABK8CUjwJmBlugEoVNdTvAFI8QZg5boDKGTXU7wDSPIOYGW75C967ty5c+fO2fsHrp9XKUkBY8QAAAAASUVORK5CYII=",
+  "imageHeight": 134,
+  "imageWidth": 218
+}

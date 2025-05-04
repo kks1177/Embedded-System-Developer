@@ -1,0 +1,94 @@
+{
+  "locale": "ko",
+  "manifest": {
+    "displayName": "Color Lamp Control",
+    "invocationName": "Color Lamp Control",
+    "category": "PRODUCTIVITY"
+  },
+  "actions": [
+    {
+      "name": "com.example.actions.colorlamp",
+      "availability": {
+        "deviceClasses": [
+          {
+            "assistantSdkDevice": {}
+          }
+        ]
+      },
+      "intent": {
+        "name": "com.example.intents.colorlamp",
+        "parameters": [
+          {
+            "name": "colorlamp",
+            "type": "colorlamp"
+          }
+        ],
+        "trigger": {
+          "queryPatterns": [
+            "조명 제어 $colorlamp:colorlamp ",
+            "색 변경 $colorlamp:colorlamp",
+            "램프 $colorlamp:colorlamp"
+          ]
+        }
+      },
+      "fulfillment": {
+        "staticFulfillment": {
+          "templatedResponse": {
+            "items": [
+              {
+                "simpleResponse": {
+                  "textToSpeech": "$colorlamp으로 색을 변경할게요"
+                }
+              },
+              {
+                "deviceExecution": {
+                  "command": "com.example.commands.colorlamp",
+                  "params": {
+                    "colorlamp": "$colorlamp"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "$colorlamp",
+      "entities": [
+        {
+          "key": "빨간색",
+          "synonyms": [
+            "붉은색",
+            "적색",
+            "빨강",
+            "빨간",
+            "레드"
+          ]
+        },
+        {
+          "key": "초록색",
+          "synonyms": [
+            "초록색",
+            "녹색",
+            "초록",
+            "풀색",
+            "그린"
+          ]
+        },
+        {
+          "key": "파란색",
+          "synonyms": [
+            "파란색",
+            "청색",
+            "파랑",
+            "하늘",
+            "블루"
+          ]
+        }
+      ]
+    }
+  ]
+}

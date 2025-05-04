@@ -1,0 +1,10 @@
+http://www.j1lab.com/
+ 구글에 j1c 쳐도 나옴
+
+Download > J1C ver 5.2.1
+업데이트 게시물 참조
+
+ >> TCP 옵션
+  IP에 127.0.0.1
+  Port 10000 (클라이언트 체크)
+  Edit Data 에 메시지 작성 Send
