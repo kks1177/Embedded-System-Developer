@@ -389,6 +389,8 @@ workspace_settings/
 test_results/
 simulation_data/
 
+05_RaspberryPi/03_AI Speaker/AI_Speaker_kks/client_secret.json
+05_RaspberryPi/03_AI Speaker/AI_Speaker_kks/creds.data
 
 
 # ========================================
