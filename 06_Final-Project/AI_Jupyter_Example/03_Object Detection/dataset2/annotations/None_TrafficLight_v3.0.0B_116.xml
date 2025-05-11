@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>None_TrafficLight_v3.0.0B_116.jpg</filename>
+	<path>O:\Object Detection Data\자율주행자동차 (신호등, 표지판 등)\학습 이미지_v2 (WOW-2023)\학습 이미지\신호등_v3\빈 신호등\images\None_TrafficLight_v3.0.0B_116.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>None_TrafficLight</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>245</xmin>
+			<ymin>422</ymin>
+			<xmax>463</xmax>
+			<ymax>546</ymax>
+		</bndbox>
+	</object>
+</annotation>

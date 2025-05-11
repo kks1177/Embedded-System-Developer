@@ -1,0 +1,50 @@
+item {
+  id: 1
+  name: 'car'
+  display_name: 'car'
+}
+item {
+  id: 2
+  name: 'crosswalk'
+  display_name: 'crosswalk'
+}
+item {
+  id: 3
+  name: 'left_turn_sign'
+  display_name: 'left_turn_sign'
+}
+item {
+  id: 4
+  name: 'right_turn_sign'
+  display_name: 'right_turn_sign'
+}
+item {
+  id: 5
+  name: 'stop sign'
+  display_name: 'stop sign'
+}
+item {
+  id: 6
+  name: 'Red_TrafficLight'
+  display_name: 'Red_TrafficLight'
+}
+item {
+  id: 7
+  name: 'Green_TrafficLight'
+  display_name: 'Green_TrafficLight'
+}
+item {
+  id: 8
+  name: 'None_TrafficLight'
+  display_name: 'None_TrafficLight'
+}
+item {
+  id: 9
+  name: 'animal'
+  display_name: 'animal'
+}
+item {
+  id: 10
+  name: 'pedestrian'
+  display_name: 'pedestrian'
+}

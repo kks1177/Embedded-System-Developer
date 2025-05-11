@@ -1,0 +1,26 @@
+<annotation>
+	<folder>1</folder>
+	<filename>Green_TrafficLight_v3.0.2B_18.jpg</filename>
+	<path>O:\Object Detection Data\자율주행자동차 (신호등, 표지판 등)\학습 이미지_v2 (WOW-2023)\학습 이미지\신호등_v3\녹색 신호등\1\Green_TrafficLight_v3.0.2B_18.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>408</width>
+		<height>308</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Green_TrafficLight</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>176</xmin>
+			<ymin>47</ymin>
+			<xmax>245</xmax>
+			<ymax>77</ymax>
+		</bndbox>
+	</object>
+</annotation>

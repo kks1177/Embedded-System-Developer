@@ -1,0 +1,10 @@
+car
+crosswalk
+left_turn_sign
+right_turn_sign
+stop sign
+Red_TrafficLight
+Green_TrafficLight
+None_TrafficLight
+animal
+pedestrian

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Green_TrafficLight_v3.0.0B_160.jpg</filename>
+	<path>녹색 신호등/images\Green_TrafficLight_v3.0.0B_160.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Green_TrafficLight</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>435</xmin>
+			<ymin>113</ymin>
+			<xmax>726</xmax>
+			<ymax>261</ymax>
+		</bndbox>
+	</object>
+</annotation>

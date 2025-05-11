@@ -1,0 +1,13 @@
+ORB_SLAM2 설치
+https://robot-vision-develop-story.tistory.com/5
+
+
+ROS 설치
+http://wiki.ros.org/melodic/Installation/Ubuntu
+
+
+라이더 센서 설치 1
+https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222578592398
+
+라이더 센서 설치 2
+https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/

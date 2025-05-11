@@ -1,0 +1,38 @@
+<annotation>
+	<folder>1</folder>
+	<filename>pedestrian_v1.2.2B_16.jpg</filename>
+	<path>O:\Object Detection Data\자율주행자동차 (신호등, 표지판 등)\학습 이미지_v2 (WOW-2023)\학습 이미지\도로 위 물체\보행자\v1.2\1\pedestrian_v1.2.2B_16.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>360</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pedestrian</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>482</xmin>
+			<ymin>146</ymin>
+			<xmax>536</xmax>
+			<ymax>261</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pedestrian</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>545</xmin>
+			<ymin>141</ymin>
+			<xmax>596</xmax>
+			<ymax>261</ymax>
+		</bndbox>
+	</object>
+</annotation>

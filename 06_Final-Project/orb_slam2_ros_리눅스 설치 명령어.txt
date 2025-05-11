@@ -1,0 +1,207 @@
+<<ORB - SLAM2 - ROS >>
+
+1. opencv 3.2.0 download
+
+	<<http://www.codebind.com/linux-tutorials/install-opencv-3-2-ubuntu-16-04/>>
+
+	//CODE
+
+	sudo apt-get update
+
+	sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+
+	sudo apt-get install python3-numpy libtbb2 libtbb-dev
+
+	sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libdc1394-22-dev libeigen3-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev sphinx-common libtbb-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libavutil-dev libavfilter-dev libavresample-dev
+
+	cd /opt
+
+	sudo git clone https://github.com/Itseez/opencv.git
+	sudo git clone https://github.com/Itseez/opencv_contrib.git
+
+	cd opencv
+	sudo git checkout 3.2.0
+
+	cd ~
+	cd /opt/opencv_contrib
+	sudo git checkout 3.2.0
+
+	cd ../opencv
+	sudo mkdir release
+	cd release
+
+	// TBB OFF, download path usr/include, pkg-config on
+	sudo cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=OFF -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr -D OPENCV_GENERATE_PKGCONFIG=ON -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv/
+
+	// **sudo**
+	sudo make -j4
+	sudo make install
+	sudo ldconfig
+	sudo pkg-config --modversion opencv
+
+2. ros(melodic) & orb-slam2-ros download
+
+	- http://wiki.ros.org/melodic/Installation/Ubuntu
+	- https://github.com/appliedAI-Initiative/orb_slam_2_ros.git
+
+	//CODE
+
+		//ros(melodic) download
+
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+	sudo apt install curl # if you haven't already installed curl
+
+	curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+	sudo apt update
+
+	sudo apt install ros-melodic-desktop-full
+
+	sudo apt install ros-melodic-slam-gmapping
+
+	echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+
+	source ~/.bashrc
+
+	sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+	sudo apt-get install python-rosdep
+
+	sudo rosdep init
+	rosdep update
+
+	cd ~/catkin_ws
+	rosdep install --from-paths src --ignore-src -r -y
+
+		//orb-slam2 download
+
+	source /opt/ros/melodic/setup.bash
+	mkdir -p ~/catkin_ws/src
+	cd ~/catkin_ws/src
+
+	git clone https://github.com/appliedAI-Initiative/orb_slam_2_ros.git
+
+	cd ..
+
+	catkin_make_isolated
+
+	source ~/catkin_ws/devel_isolated/setup.bash
+	rospack orb_slam_2_ros
+
+	//build - error (opencv) 
+
+	cd /opt/ros/melodic/share/cv_bridge/cmake
+	sudo gedit cv_bridgeConfig.cmake
+	96 line opencv -> opencv4
+
+	// no target -error
+
+	/orb_slam2/Thirdparty/DBoW2/
+	/orb_slam2/Thirdparty/g2o/
+
+	sudo mkdir lib
+
+	/orb_slam2/Thirdparty/DBoW2/lib
+	/orb_slam2/Thirdparty/g2o/lib
+
+rospack find usb_cam
+
+3. usb-camera
+
+	cd ~/catkin_ws/src
+
+	git clone https://github.com/ros-drivers/usb_cam.git
+ 
+	cd ..
+
+	catkin_maked_isolated
+
+	source ~/catkin_ws/devel_isolated/setup.bash
+	rospack find usb_cam
+
+	// no found err
+
+	cd ~/catkin_ws/devel_isolated
+	sudo gedit setup.bash
+
+	add line
+	
+	////cv::videocapture err
+
+	////add this instead of find_package(OpenCV)
+
+	////find_package(OpenCV 4.0 QUIET)
+	////if(NOT OpenCV_FOUND)
+   	////	find_package(OpenCV 3.0 QUIET)
+   	////	if(NOT	OpenCV_FOUND)
+      	////		find_package(OpenCV 2.4.3 QUIET)
+      	////		if(NOT OpenCV_FOUND)
+        	////			message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
+     	////		endif()
+   	////	endif()
+	////endif()
+
+4. ros setting
+
+	//CODE
+
+	cd /home/jetson/catkin_ws/src/orb_slam_2_ros/ros/launch
+	sudo gedit orb_slam2_r200_mono.launch
+
+	orginal code
+	<remap from="/camera/image_raw" to="/camera/rgb/image_raw" />
+	new code
+	<remap from="/camera/image_raw" to="/usb_cam/image_raw" />
+	
+	cd ~/catkin_ws
+	
+	//ros server 
+ 	
+	<<terminal 1 on>>
+	
+	source /opt/ros/melodic/setup.bash
+	roscore
+
+	//ros slam
+ 	
+	<<terminal 2 on>>
+	
+	source ~/catkin_ws/devel_isolated/setup.bash
+	roslaunch orb_slam2_ros orb_slam2_r200_mono.launch
+
+	//ros usb_cam
+ 	
+	<<terminal 3 on>>
+	
+	source ~/catkin_ws/devel_isolated/setup.bash
+	rosrun usb_cam usb_cam_node
+
+	<<terminal 4 on>>
+
+	source /opt/ros/melodic/setup.bash
+	rosrun rviz rviz
+
+5. rviz setting
+
+	add -> topic
+	pointcloud add
+	axis add
+	mono - image - raw add
+
+6. do mapping
+
+7. save map
+
+8. load map
+
+	//CODE
+	
+	source ~/catkin_ws/devel_isolated/setup.bash
+	rosservice call /orb_slam2_mono/save_map map.bin
+
+9. localization
+
+10. get point in loaded map
+
+11. using value -> motor controll
+ 
