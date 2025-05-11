@@ -466,3 +466,6 @@ AI_Jupyter_Example/**/results/
 ~$*.pptx
 ~$*.hwp
 .~lock.*
+
+06_Final-Project/AI_Jupyter_Example/04_RoadFollowing/video/video_roadfollowing.mp4
+06_Final-Project/AI_Jupyter_Example/03_Object Detection/dataset_tfrecord/train.record
