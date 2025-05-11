@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>car_v1.1.0B_27.jpg</filename>
+	<path>O:\Object Detection Data\신호등 + 표지판\학습 이미지_v2 (WOW-2023)\학습 이미지\도로 위 물체_v2\자동차\ALL NEW morning Miniature Car 1,33 scale\images\car_v1.1.0B_27.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>360</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>317</xmin>
+			<ymin>95</ymin>
+			<xmax>443</xmax>
+			<ymax>179</ymax>
+		</bndbox>
+	</object>
+</annotation>
